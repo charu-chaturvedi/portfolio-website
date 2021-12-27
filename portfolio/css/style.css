@@ -1,0 +1,298 @@
+@import 'utilities.css';
+:root{
+    --primary:rgb(154, 182, 183);
+    --dark:rgb(22, 22, 22);
+    --pure:rgb(255, 255, 255);
+    --ternary:rgb(137, 137, 137);
+    --light:#F2F2F2;
+    --secondary:#070606;
+
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antialiased;
+}
+html{
+    scroll-behavior: smooth;
+}
+div .navigation a{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 50px;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 50px;
+    font-family: 'Lato' , sans-serif;
+    
+}
+div .navigation a:hover{
+    color: yellowgreen;
+}
+header{
+    background:var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+    
+}
+header nav .left a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right:2rem;
+    text-transform: uppercase;
+    transition:all .3s ease;
+    
+}
+header nav .left a:hover{
+    color:var(--primary)
+}
+header nav {
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 1152px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.charu .left img{
+    width:400px;
+}
+.charu .right{
+    color:var(--pure)
+}
+.charu .right p{
+    margin-top: 18px;
+    font-family: "Lato";
+    font-size: 20px;
+    color: seagreen;
+    
+}
+.charu .right p b{
+    font-size: 28px;
+    color:white;
+}
+.charu .right h1{
+    font-size: 35px;
+    color:white;
+    margin-top: 1rem;
+}
+.charu .right h{
+    font-size: large;
+    font-weight:100;
+    margin-bottom: 0.5rem;
+}
+.charu .right h span{
+    color:seagreen; 
+    
+}
+.charu .right {
+    margin-top:-7rem;
+    
+}
+
+section{
+    padding:6rem 0;
+
+}
+section.about .about-me-img{
+    height: 450px;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+section.about h1 span{
+    color:var(--primary);
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+section.about p{
+    font-family:"Lato", sans-serif;
+    color:var(--ternary);
+    line-height: 1.9;
+    margin-bottom:2rem;
+}
+section.about .social{
+    display:flex;
+}
+section.about .social a{
+    background:var(--dark);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right:0.6em;
+    transition: all .3s ease;
+}
+section.about .social a:hover{
+    background:var(--primary);
+}
+section.about .social a img{
+    width:100%;
+    height:100%;
+    padding:0.5rem;
+}
+
+.section-heading{
+    color:var(--secondary);
+    text-align: center;
+    margin-bottom:1rem;
+    line-height: 0.5;
+}
+.section-heading span{
+    color: var(--primary);
+}
+
+
+.skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  
+  .skill-header {
+    margin-bottom: 1rem;
+  }
+  
+  .skills-wrapper img {
+    padding: 1.25rem;
+  }
+  
+  .icon {
+    width: 11.875rem;
+    height: 11.25rem;
+ }
+ .icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+  }
+
+  /* Education Section */
+#education{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+    padding: 50px;
+}
+#education h1{
+    margin-bottom: 60px;
+    font-size: 42px;
+    text-align: center;
+    color: white;
+
+}
+.columns{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+}
+.box{
+    height: 200px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+.box h2{
+    color: yellowgreen;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+.box p{
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* Contact me section */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke
+    
+}
+#contact .heading{
+    margin-bottom: 60px;
+    margin-top: 45px;
+    font-size: 50px;
+    text-align: center;
+    color: #000000dc;
+}
+#contact h1{
+    margin: 50px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    padding: 15px 20px;
+    margin: 15px;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    border-color: brown;
+    
+}
+#message{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: brown
+}
+#submit{
+    padding: 15px 20px;
+    margin: 30px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: #000000dc;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-style:solid;
+}
+#submit{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+#submit:hover{
+    color:var(--secondary);
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: darksalmon;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
